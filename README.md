@@ -24,13 +24,13 @@ These are the things I've picked up along the way while messing around with proj
 
 ---
 
-## [🏗 My Projects](https://pastebin.com/Qs6UHGxD)
+## [🏗 My Projects](https://rexd.space/#projects)
 I build things because I'm curious or because I need a better way to do something.
 I haven't uploaded all of my projects to Github yet.
 
 *   **[Stream](https://stream.rexd.space)**: My biggest project so far. I got tired of streaming sites being absolute garbage, so I built my own aggregator to watch stuff without the headache.
 *   **[Aurora](https://aurora.rexd.space)**: A project for 🎧 Soothing sounds for focus and relaxation.
-*   **[Heart](https://heart.rexd.space)**: This site is a place for everything I’m exploring. - Also my Portfolio for now.
+*   **[Heart](https://heart.rexd.space)**: This site is a place for everything I’m exploring. - Also my Past Portfolio.
 *   **[Craftex](https://craftex.rexd.space)**: CRAFTEX is a crossplay Minecraft server supporting both Java and Bedrock Edition.
 *   **[StreamDock](https://streamdock.rexd.space)**: The Ultimate Stream Collection.
 *   **[Memories](https://memories.rexd.space)**: Moments in Motion - A visual archive of time.
@@ -46,7 +46,7 @@ I haven't uploaded all of my projects to Github yet.
 
 ---
 
-## [📬 Connect with me](mailto:sagar@rexd.space)
+## [📬 Connect with me](https://rexd.space/#contact)
 - **Discord**: [Server](https://dsc.gg/rip-craftex)
 - **Portfolio**: [Visit](rexd.space)
 - **Email**: [Contact Me](mailto:contact@rexd.space)
