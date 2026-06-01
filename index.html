@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagar — MySpace</title>
+  <meta name="description" content="Pranav, a vibe coder and student developer. Showcasing projects like Stream, Aurora, Craftex and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">sagar<span class="dot">.</span></div>
+      <div class="loader-bar-container">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AETHER BACKGROUND GRID -->
+  <canvas id="aether-grid"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">sagar<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:contact@rexd.space" class="nav-cta">Get in touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#contact" class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="hero-bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="hero-content reveal">
+        <div class="hero-tag">👋 Open for Collaborations</div>
+        <h1 class="hero-heading">
+          I build things<br>
+          for <span class="grad-text" id="cycle-word">fun.</span>
+        </h1>
+        <p class="hero-sub">
+          I'm <strong>Sagar</strong> — a student who just loves to build stuff. I'm not a pro; I'm just a guy who likes to tinker with code until things work. A <strong>vibe coder</strong> turning caffeine into projects.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">See My Work</a>
+          <a href="#contact" class="btn-ghost">Let's Talk</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="about-grid reveal">
+          <div class="about-left">
+            <span class="section-label">About Me</span>
+            <h2>Vibe coder.<br>Constant learner.</h2>
+          </div>
+          <div class="about-right">
+            <p>
+              For me, coding isn't about rigid rules or corporate workflows — it's about the flow, the late-night sessions, the right music, and just getting that <em>"this looks and feels right"</em> feeling when something finally comes to life.
+            </p>
+            <p>
+              If it doesn't look cool or feel intuitive, I keep iterating until it does. Every project is a chance to pick up a new library or language. I love sharing what I build — if you find something useful, dive in!
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-value">
+                  <span class="stat-num" data-target="8">0</span><span>+</span>
+                </div>
+                <span class="stat-label">Projects Shipped</span>
+              </div>
+              <div class="stat">
+                <div class="stat-value">
+                  <span class="stat-num" data-target="15">0</span><span>+</span>
+                </div>
+                <span class="stat-label">Technologies Used</span>
+              </div>
+              <div class="stat">
+                <div class="stat-num">∞</div>
+                <span class="stat-label">Vibes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-label">Projects</span>
+          <h2>Things I've built.</h2>
+          <p class="section-desc">I build things because I'm curious or because I need a better way to do something.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- 01 Stream (featured) -->
+          <article class="proj-card reveal featured p-stream" data-delay="0">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">01</div>
+                <div class="proj-links">
+                  <a href="https://stream.rexd.space" target="_blank" title="Live Site" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Stream</h3>
+              <p>My biggest project so far. I got tired of streaming sites being absolute garbage, so I built my own aggregator to watch stuff without the headache. Clean UI, fast search, zero ads.</p>
+              <div class="proj-tags">
+                <span>Next.js</span><span>React</span><span>Tailwind</span><span>API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 Aurora -->
+          <article class="proj-card reveal p-aurora" data-delay="100">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">02</div>
+                <div class="proj-links">
+                  <a href="https://aurora.rexd.space" target="_blank" title="Live Site" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Aurora</h3>
+              <p>Soothing sounds for focus and relaxation. A minimal ambient sound mixer with beautiful visuals for when you need to zone in and get work done.</p>
+              <div class="proj-tags">
+                <span>Astro</span><span>React</span><span>Web Audio</span><span>Open Source</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 Heart -->
+          <article class="proj-card reveal p-heart" data-delay="200">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">03</div>
+                <div class="proj-links">
+                  <a href="https://heart.rexd.space" target="_blank" title="Live Site" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Heart</h3>
+              <p>A space for everything I'm exploring — personal experiments, ideas, and things that don't fit anywhere else. Also served as my past portfolio.</p>
+              <div class="proj-tags">
+                <span>Astro</span><span>Tailwind</span><span>Personal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 Craftex -->
+          <article class="proj-card reveal p-craftex" data-delay="0">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">04</div>
+                <div class="proj-links">
+                  <a href="https://craftex.rexd.space" target="_blank" title="Live Site" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Craftex</h3>
+              <p>A crossplay Minecraft server supporting both Java and Bedrock editions. Community-run with custom plugins, game modes, with a dedicated discord server.</p>
+              <div class="proj-tags">
+                <span>Minecraft</span><span>Java</span><span>Community</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 StreamDock -->
+          <article class="proj-card reveal p-streamdock" data-delay="100">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">05</div>
+                <div class="proj-links">
+                  <a href="https://streamdock.rexd.space" target="_blank" title="Live Site" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>StreamDock</h3>
+              <p>The ultimate stream collection — a curated hub for discovering and organizing streaming content across different platforms in one clean interface.</p>
+              <div class="proj-tags">
+                <span>Next.js</span><span>TypeScript</span><span>Tailwind</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06 Memories -->
+          <article class="proj-card reveal p-memories" data-delay="200">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">06</div>
+                <div class="proj-links">
+                  <a href="https://memories.rexd.space" target="_blank" title="Live Site" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Memories</h3>
+              <p>Moments in Motion — a visual archive of time. A beautiful gallery experience for preserving and browsing personal photo memories with smooth transitions.</p>
+              <div class="proj-tags">
+                <span>JavaScript</span><span>CSS</span><span>Gallery</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 07 StreamX -->
+          <article class="proj-card reveal p-streamx" data-delay="0">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">07</div>
+                <div class="proj-links">
+                  <a href="https://streamx.rexd.space" target="_blank" title="Live Site" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>StreamX</h3>
+              <p>The original version of Stream — a modern streaming experience for curated content. The foundation that led to the bigger, better Stream project.</p>
+              <div class="proj-tags">
+                <span>React</span><span>JavaScript</span><span>API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 08 Link Hub -->
+          <article class="proj-card reveal p-linkhub" data-delay="100">
+            <div class="proj-preview"></div>
+            <div class="proj-card-inner">
+              <div class="proj-card-top">
+                <div class="proj-number">08</div>
+                <div class="proj-links">
+                  <a href="https://pastebin.com/Qs6UHGxD" target="_blank" title="Visit" class="icon-link stretched-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Link Hub</h3>
+              <p>A centralized pastebin for all my project links, socials, and resources — one place to find everything I've built and where to reach them.</p>
+              <div class="proj-tags">
+                <span>Links</span><span>Resources</span><span>Socials</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-label">Skills</span>
+          <h2>My toolkit.</h2>
+          <p class="section-desc">Things I've picked up along the way while messing around with projects.</p>
+        </div>
+
+        <div class="skills-layout reveal">
+          <div class="skill-group">
+            <h4>Frontend</h4>
+            <ul>
+              <li>Next.js</li>
+              <li>React</li>
+              <li>Astro</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Core Web</h4>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Backend & Data</h4>
+            <ul>
+              <li>Bun Runtime</li>
+              <li>Java / Minecraft</li>
+              <li>PostgreSQL</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Tools & Other</h4>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Vercel / Cloudflare</li>
+              <li>Umami Analytics</li>
+              <li>Linux / Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="contact-block reveal">
+          <span class="section-label">Contact</span>
+          <h2>Let's build something<br>together.</h2>
+          <p>I'm always open to interesting projects, collaborations, or just a conversation about tech. Drop me a message.</p>
+          
+          <div class="contact-links-row">
+            <a href="mailto:contact@rexd.space" class="contact-chip">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Send Mail
+            </a>
+            <a href="https://dsc.gg/rip-craftex" target="_blank" class="contact-chip">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"></path></svg>
+              Discord
+            </a>
+            <a href="https://heart.rexd.space" target="_blank" class="contact-chip">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Heart
+            </a>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name">Your Name</label>
+                <input type="text" id="f-name" placeholder="Alex Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="f-email">Email Address</label>
+                <input type="email" id="f-email" placeholder="alex@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" rows="4" placeholder="I'd love to work with you on..." required></textarea>
+            </div>
+            <!-- Turnstile Widget -->
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADWxI7UcLBqTZrPe" data-theme="dark"></div>
+            <button type="submit" class="btn-primary" id="send-btn">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">sagar<span class="dot">.</span></a>
+          <p class="footer-bio">A student developer and vibe coder building things for the fun. Turning caffeine into projects one line at a time.</p>
+          <div class="footer-socials">
+            <a href="https://git.new/PranavSagarXD" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://dsc.gg/rip-craftex" target="_blank" aria-label="Discord">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"></path></svg>
+            </a>
+            <a href="mailto:contact@rexd.space" aria-label="Email">
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projects Column -->
+        <div class="footer-links-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="https://stream.rexd.space" target="_blank">Stream</a></li>
+            <li><a href="https://aurora.rexd.space" target="_blank">Aurora</a></li>
+            <li><a href="https://heart.rexd.space" target="_blank">Heart</a></li>
+            <li><a href="https://craftex.rexd.space" target="_blank">Craftex</a></li>
+            <li><a href="https://streamdock.rexd.space" target="_blank">StreamDock</a></li>
+          </ul>
+        </div>
+        
+        <!-- More Projects Column -->
+        <div class="footer-links-col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="https://memories.rexd.space" target="_blank">Memories</a></li>
+            <li><a href="https://streamx.rexd.space" target="_blank">StreamX</a></li>
+            <li><a href="https://pastebin.com/Qs6UHGxD" target="_blank">Link Hub</a></li>
+            <li><a href="https://rexd.space" target="_blank">Main Site</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation Column -->
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#skills">Toolkit</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Pranav Sagar ✦ All rights reserved.</p>
+        <div class="footer-credits">
+          <span>Powered by <strong>RexD</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- CURSOR PET (KITTEN) -->
+  <div id="vibe-pet" class="vibe-pet sitting">
+    <div class="pet-bubble">Click 4 Fun</div>
+    <div class="cat-body">
+      <div class="cat-head">
+        <div class="cat-ears"></div>
+        <div class="cat-eyes"></div>
+        <div class="cat-nose"></div>
+      </div>
+      <div class="cat-tail"></div>
+      <div class="cat-legs">
+        <div class="leg front-left"></div>
+        <div class="leg front-right"></div>
+        <div class="leg back-left"></div>
+        <div class="leg back-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE VOLUME TOGGLE -->
+  <div id="mobile-vol-container" class="mobile-vol-container">
+    <button id="mobile-vol-btn" class="mobile-vol-btn" aria-label="Volume Control">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+      </svg>
+    </button>
+    <div class="vol-slider-popover" id="vol-popover">
+      <input type="range" id="mobile-volume-slider" min="0" max="1" step="0.01" value="0.7">
+    </div>
+  </div>
+
+  <!-- MUSIC PLAYER -->
+  <div id="music-player">
+    <div class="player-inner">
+      <div class="player-info">
+        <div class="music-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+        </div>
+        <div class="song-details">
+          <span id="track-name">Vibe Track 01</span>
+          <div class="status-container">
+            <span id="track-status">Paused</span>
+            <div id="visualizer" class="visualizer">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <div class="ctrl-buttons">
+          <button id="prev-btn" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6L18 18V6z"></path></svg>
+          </button>
+          <button id="play-btn" class="play-pause" aria-label="Play">
+            <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+            <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
+          </button>
+          <button id="next-btn" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"></path></svg>
+          </button>
+        </div>
+        <div class="progress-container">
+          <span id="curr-time">0:00</span>
+          <div class="progress-bar-wrapper">
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span id="total-time">0:00</span>
+        </div>
+      </div>
+
+      <div class="player-volume">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="vol-icon"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.7">
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
