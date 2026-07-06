@@ -29,6 +29,7 @@ I build things because I'm curious or because I need a better way to do somethin
 I haven't uploaded all of my projects to Github yet.
 
 *   **[Stream](https://stream.rexd.space)**: My biggest project so far. I got tired of streaming sites being absolute garbage, so I built my own aggregator to watch stuff without the headache.
+*   **[Momento](https://github.com/PranavSagarXD/Momento)**: Turn your photos into beautiful montage videos with customizable transitions, face stabilization, and more — all on your device.
 *   **[Aurora](https://aurora.rexd.space)**: A project for 🎧 Soothing sounds for focus and relaxation.
 *   **[Heart](https://heart.rexd.space)**: This site is a place for everything I’m exploring. - Also my Past Portfolio.
 *   **[Craftex](https://craftex.rexd.space)**: CRAFTEX is a crossplay Minecraft server supporting both Java and Bedrock Edition.
@@ -48,11 +49,11 @@ I haven't uploaded all of my projects to Github yet.
 
 ## [📬 Connect with me](https://rexd.space/#contact)
 - **Discord**: [Server](https://dsc.gg/rip-craftex)
-- **Portfolio**: [Visit](rexd.space)
+- **MySpace**: [Visit](rexd.space)
 - **Email**: [Contact Me](mailto:contact@rexd.space)
 
 ---
 
 <p align="center">
-  <i>"Turning caffeine into projects and vibes into code."</i>
+  <i>"Turning caffeine into projects."</i>
 </p>
